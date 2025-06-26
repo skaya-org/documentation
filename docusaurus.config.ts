@@ -112,6 +112,14 @@ const config: Config = {
               label: 'Tutorial',
               to: '/docs/intro',
             },
+            {
+              label: 'Frontend',
+              to: '/docs/category/skaya-frontend',
+            },
+            {
+              label: 'Blockchain',
+              to: 'docs/category/skaya-blockhain',
+            },
           ],
         },
         {
