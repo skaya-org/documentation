@@ -153,7 +153,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Skaya.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Skaya, Inc. Built with Skaya.`,
     },
     prism: {
       theme: prismThemes.github,
