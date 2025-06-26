@@ -5,6 +5,7 @@
 /build
 
 # Generated files
+.skaya
 .docusaurus
 .cache-loader
 
