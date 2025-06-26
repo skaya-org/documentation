@@ -16,7 +16,6 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -32,9 +31,9 @@ function HomepageHeader() {
 export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout
-      title={`Official Documentation of ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+    <Layout 
+      title={`Documentation`}
+      description="Skaya docs">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
