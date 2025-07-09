@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Page
 
-Skaya's AI-powered component generator accelerates UI development with smart, context-aware scaffolding. Generate production-ready pages with integrated api, components, styling, and documentation in seconds.
+Skaya's AI-powered page generator accelerates UI development with smart, context-aware scaffolding. Generate production-ready pages with integrated api, components, styling, and documentation in seconds.
 
 <div
   style={{
