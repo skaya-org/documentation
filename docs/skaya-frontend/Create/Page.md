@@ -162,9 +162,9 @@ Dependencies (api):
 
 ## Key Notes
 ### 1. When using AI generation:
-    - You can import existing pages if needed, fostering a modular and reusable codebase.
+    - You can import existing components if needed, fostering a modular and reusable codebase.
     - Provide clear, specific prompts for best results, especially when defining how imported components  or APIs should interact.
-    - Generated files include tests and stories by default.
+    - Generated files include tests by default.
 
 ### 2. Folder structure:
     - Pages are created in PascalCase
