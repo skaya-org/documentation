@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Component
 
+Skaya's AI-powered component updater accelerates UI development with smart, context-aware scaffolding. Updates production-ready components with integrated testing, styling, and documentation in seconds.
+
 <div
   style={{
     display: 'flex',
@@ -37,101 +39,145 @@ sidebar_position: 1
     <span>| Skaya v1.0.0</span>
   </a>
 </div>
-:::tip[Info]
-Skaya is a versatile CLI toolkit designed to supercharge your full-stack web3 project setup, with comprehensive support for frontend, backend, and blockchain development.
+
+:::tip[Prerequisites]
+This guide assumes knowledge of:
+- [Basic Skaya project initialization](/docs/category/init)
+- [Basic Skaya component creation](/docs/skaya-frontend/Create/Component)
+- Fundamental React concepts
 :::
 
-## Quickstart Guide
+## Key Features
 
-This guide provides a streamlined approach to bootstrap a new **Skaya** project in under 5 minutes.
+| Feature                | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| **🤖 AI-Powered**      | Context-aware generation with dynamic prop/state suggestions                |
+| **🌐 Language Support**| TypeScript (`tsx`) with strict typing enforcement                           |
+| **🎨 Styling Options** | `CSS` \| `SCSS` \| `styled-components` \| `Tailwind`                       |
+| **🧪 Test Coverage**   | Auto-generated Jest/Vitest + Storybook stories                              |
+| **🔄 Dependency Import**| Seamlessly import existing components and APIs                              |
 
-## Prerequisites
 
-Ensure you have the following dependencies installed on your system:
+Every component includes:
+- ✅ **Core component file** with TypeScript interface
+- ✅ **Storybook integration** for visual testing
+- ✅ **Unit tests** with sample test cases
+- ✅ **Style file** (CSS/SCSS) or CSS-in-JS setup
 
-- **Node.js**: Version 18.0 or a later stable release. We recommend using a version manager like `nvm` (Node Version Manager) for seamless version switching.
-- **npm** or **Yarn**: The Node.js package manager is bundled with Node.js.
+## Updating Components
 
-## Installation
-
-For a global installation of the Skaya CLI, execute the following command in your terminal:
-
+### Interactive Mode
 ```bash
-npm install -g skaya
+skaya update
+# Follow the interactive prompts
 ```
 
-:::info[API Key Required]
-To enable AI-powered website creation features, you'll need to configure your API key.
+### Direct Generation
+```bash
+skaya update component --project frontend 
+```
 
-[Click here to set up your API key](/docs/api)
+### Quick Start with npx
+```bash
+npx skaya update component -p frontend 
+```
+
+
+:::danger[Advanced Configuration]
+#### Custom Template Setup (Coming in v2.0)
+`skaya update component --template path/to/template.json`
 :::
 
-## Initiate a new project
 
-Generate a new Skaya project using our production-ready templates:
+## Example Workflow with Custom imports
 
+### 1: Initiate Creation
 ```bash
-skaya init
-```
-Or directly with npx
-
-```bash
-npx skaya init
+skaya update component -p frontend 
 ```
 
-You can run this command in Command Prompt, Powershell, Terminal, or any other integrated terminal.
-
-#### For frontend projects:
-
+### 2: Configuration
 ```bash
-npx skaya init frontend
-# Enter project name: my-web3-app
-? Select frontend template category:  
-❯ Skaya Official       # Curated by Skaya team  
-  Skaya Starter Kit    # Community-driven templates  
-  Blank                # Minimal setup  
-  Custom Repo         # Import from a Git repository  
-```
-Select the Template
-```bash
-? Select a frontend template:  
-❯ REACT TS    # React + TypeScript (Production-ready)  
-  VITE TS     # Vite + TypeScript (Optimized for speed)  
-  NEXTJS      # Next.js (SSR/SSG support)  
+? Select component to update:
+  Profile
+  Walletbutton
+❯ LoginButton
 ```
 
-:::danger Coming Soon
-
-#### For backend projects (coming soon):
-
 ```bash
-npx skaya init backend
-# Enter project name: my-web3-apis
+✔ Use AI to generate the component? Yes
+? Select which required components you would like to import: 
+(Press <space> to select, <a> to toggle all, <i> to invert selection)
+  ◉ component
+❯ ◯ api
 ```
 
-:::
+  You can select existing components or APIs to import into your component needs to be updated, allowing for seamless integration and reusability. For instance, you might want to import a `Walletbutton` component and a `Login` API into a new `Profile` component.
 
-:::danger Coming Soon
+- Learn how to create Apis in our [Api Create Guide](/docs/skaya-frontend/Create/Api).
 
-#### For Blockchain projects (coming soon):
+### 3. Import Custom Selection
 
-```bash
-npx skaya init smart-contract
-# Enter project name: my-web3-contracts
-```
-
-:::
-
-## Start your development
-
-After project generation, navigate to your new project directory and start the development server.
+#### A. Import BuiltIn Componenet
 
 ```bash
-cd my-web3-app
-npm install
-npm run dev
+✔ Select which required components you would like to import: component, api
+? Select component components to import:
+(Press <space> to select, <a> to toggle all, <i> to invert selection, and <enter> to proceed)
+❯◉ Walletbutton
+```
+#### B. Import BuiltIn Apis
+```bash
+✔ Select component components to import: Walletbutton
+? Select api components to import:
+❯◉ Login
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Skaya site, you'll need to navigate the terminal there.
 
-The `npm run dev` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:5173/ or http://localhost:3000/.
+### 4. Ai Prompt Specification For Component Generation
+```bash
+✔ Select component components to import: Walletbutton
+✔ Select api components to import: Login
+
+--- Dependencies to be imported ---
+
+Dependencies (component):
+- Walletbutton
+
+Dependencies (api):
+- Login
+-------------------------------------------------
+? Enter AI Prompt on how the files and code should work: Import the walletconenctbutton and use login api to create a nftcard
+```
+
+### 5. File Generation Output
+```bash
+✅ component file updated at myapp/src/components/Walletbutton/Walletbutton.tsx
+✅ component file updated at myapp/src/components/Walletbutton/Walletbutton.stories.tsx
+✅ component file updated at myapp/src/components/Walletbutton/Walletbutton.test.tsx
+✅ component file updated at myapp/src/components/Walletbutton/Walletbutton.css
+```
+
+## Key Notes
+
+### 1. When using AI generation:
+    - You can import existing components if needed, fostering a modular and reusable codebase.
+    - Provide clear, specific prompts for best results, especially when defining how imported components or APIs should interact.
+    - Generated files include tests and stories by default.
+
+
+### 2. Folder structure:
+    - Components are created in PascalCase
+    - Test/story files are automatically paired
+    - CSS modules are generated by default
+
+
+## Import Behavior
+- **Automatic Props Binding**: Imported components' props are automatically wired
+- **API Hook Generation**: Required API hooks are generated with proper typing
+- **Dependency Tracking**: All imports are tracked in the component's metadata
+
+
+
+## Updating Components
+Learn how to modify existing components in our [Component Update Guide](/docs/skaya-frontend/Update/Component).
