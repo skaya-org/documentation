@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Component
 
+Skaya's AI-powered component generator accelerates UI development with smart, context-aware scaffolding. Generate production-ready components with integrated testing, styling, and documentation in seconds.
+
 <div
   style={{
     display: 'flex',
@@ -37,9 +39,6 @@ sidebar_position: 1
     <span>| Skaya v1.0.0</span>
   </a>
 </div>
-
-
-Skaya's AI-powered component generator accelerates UI development with smart, context-aware scaffolding. Generate production-ready components with integrated testing, styling, and documentation in seconds.
 
 :::tip[Prerequisites]
 This guide assumes knowledge of:
@@ -118,7 +117,9 @@ myapp/src/components
 ❯ ◯ api
 ```
 
-You can select existing components or APIs to import into your newly generated component, allowing for seamless integration and reusability. For instance, you might want to import a `Walletbutton` component and a `Login` API into a new `NftCard` component.
+  You can select existing components or APIs to import into your newly generated component, allowing for seamless integration and reusability. For instance, you might want to import a `Walletbutton` component and a `Login` API into a new `NftCard` component.
+
+- Learn how to create Apis in our [Api Create Guide](/docs/skaya-frontend/Create/Api).
 
 ```bash
 ✔ Select which required components you would like to import: component, api
@@ -176,4 +177,4 @@ Successful generation output:
 
 
 ## Updating Components
-Learn how to modify existing components in our [Component Update Guide](/docs/advanced/update-components).
+Learn how to modify existing components in our [Component Update Guide](/docs/skaya-frontend/Update/Component).
