@@ -1,8 +1,8 @@
 ---
-sidebar_position: 6
+sidebar_position: 3
 ---
 
-# Congratulations!
+# API
 
 You have just learned the **basics of Skaya** and made some changes to the **initial template**.
 
