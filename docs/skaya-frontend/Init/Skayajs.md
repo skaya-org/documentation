@@ -10,24 +10,19 @@ Skaya provides powerful templates to jumpstart your AI-powered Web3 development.
 
 Skaya offers three main categories of templates:
 
-1. **Frontend Templates** - Web3-ready UI components and pages with built-in:
+1. **Skaya Templates** - Web3-ready UI Templates and pages with built-in:
    - Wallet connection (Web3.0 auth)
    - AI-powered UI components
    - Responsive layouts
 
-2. **Backend Templates** - AI-enhanced API services featuring:
-   - Pre-configured Web3 providers
-   - AI model integration endpoints
-   - JWT authentication
-   - Database connectors
+2. **Framework Templates** - AI-enhanced API services featuring:
+   - React.js: [Get started](/docs/skaya-frontend/Init/Reactjs) with the widely-used JavaScript library for building user interfaces.
+   - Next.js: [Develop](/docs/skaya-frontend/Init/Nextjs) powerful, server-rendered React applications with ease.
+   - Vite: Enjoy a [lightning-fast development](https://vite.dev/) experience with this modern build tool.
 
-3. **Blockchain Templates** - Secure blockchain contracts including:
-   - Custom Blockchain Nodes
-   - Custom Enum File (For creating TypeScript types)
-   - Token standards (ERC-20, ERC-721)
-   - DeFi protocol starters
-   - Gas-optimized patterns
-
+3. **Skaya Community Templates** - Explore a collection of verified and audited templates contributed by the Skaya community:
+   - Custom Templates from Developers: Access unique and specialized templates created by the developer community.
+   - Community-Driven Innovations: Benefit from a growing library of creative and robust solutions.
 
 ## Initializing a Project with Templates
 
@@ -51,22 +46,14 @@ skaya init
 ```bash
 `? Enter frontend project folder name: my-web3-app
 ```
-3. For frontend projects, choose between frameworks or templates:
+3. For skaya templates, choose templates:
 ```bash
 ? How would you like to create your frontend project?
-❯ Use a framework (React, Next.js, Vite) 
-  Use a template
+  Use a framework (React, Next.js, Vite) 
+❯ Use a template
 ```
 
-4. If selecting a framework:
-```bash
-? Select frontend framework:
-❯ React (via create-react-app)
-  Next.js
-  Vite
-```
-
-5. If selecting skaya templates, choose from available categories:
+4. After selecting skaya templates, choose from available categories:
 ```bash
 ? Select frontend template category:
 ❯ Skaya Official
@@ -75,7 +62,7 @@ skaya init
   Custom Repo
 ```
 
-6. Then select a specific template:
+5. Then select a specific template:
 ```bash
 ? Select a frontend template:
 ❯ REACT TS
@@ -87,32 +74,8 @@ skaya init
 
 After initialization, you can start your development servers:
 
-### Start Frontend Only
-
 ```bash
 skaya start frontend
-```
-
-### Start Backend Only
-
-```bash
-skaya start backend
-```
-
-### Smart Contract Development
-
-```bash
-skaya start blockchain
-```
-
-### Start All Services
-
-- Starts frontend, backend and blockchain services
-- Enables cross-service communication
-- Monitors both servers with unified logging
-
-```bash
-skaya start
 ```
 
 
@@ -120,6 +83,10 @@ skaya start
 
 Continue your Skaya journey with these guides:
 
-- [Creating Frontend Component type](docs/category/create) - Learn how to create custom ai generated components,apis,pages in your fullstack Web3 application
+- [Creating Frontend Component](/docs/skaya-frontend/Create/Component) - Learn how to create custom ai generated components with apis and previous components integration in your fresh frontend app.
 
-- [Creating custom templates](../template-development) - Build and share your own Skaya templates (Coming Soon as open-source)
+- [Creating Frontend Pages](/docs/skaya-frontend/Create/Page) - Learn how to create custom ai generated pages with apis and previous components integration in your fresh frontend app.
+
+
+- [Creating Frontend Apis](/docs/skaya-frontend/Create/Api) - Learn how to create custom ai generated apis.
+

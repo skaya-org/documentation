@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# Component
+# Page
 
 Skaya's AI-powered page updater accelerates UI development with smart, context-aware scaffolding. Updates production-ready components with integrated testing, styling, and documentation in seconds.
 
