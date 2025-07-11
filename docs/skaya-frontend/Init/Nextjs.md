@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Skaya Next.js Template
+# Next.js Template
 
 Skaya provides optimized Next.js templates for AI-powered Web3 development with built-in TypeScript support and smart defaults.
 

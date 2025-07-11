@@ -45,7 +45,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/skaya-labs',
+            'https://github.com/skaya-org',
         },
         blog: {
           showReadingTime: true,
@@ -56,7 +56,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/skaya-labs',
+            'https://github.com/skaya-org',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -91,7 +91,7 @@ const config: Config = {
           label: 'Tutorial',
         },
         {
-          href: 'https://github.com/skaya-labs',
+          href: 'https://github.com/skaya-org',
           label: 'GitHub',
           position: 'right',
         },
@@ -148,7 +148,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/skaya-labs',
+              href: 'https://github.com/skaya-org',
             },
           ],
         },
