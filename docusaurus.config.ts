@@ -109,12 +109,16 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Get Started',
               to: '/docs/intro',
             },
             {
               label: 'Frontend',
               to: '/docs/category/skaya-frontend',
+            },
+            {
+              label: 'Backend',
+              to: '/docs/category/skaya-backend',
             },
             {
               label: 'Blockchain',
@@ -125,33 +129,25 @@ const config: Config = {
         {
           title: 'Community',
           items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/skaya',
+              {
+              label: 'GitHub',
+              href: 'https://github.com/skaya-org',
             },
             {
               label: 'Discord',
               href: 'https://discordapp.com/invite/skaya',
             },
             {
-              label: 'X',
-              href: 'https://x.com/skaya',
+              label: 'Linkedin',
+              href: 'https://linkedin.com/company/skaya-org',
+            },
+            {
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/questions/tagged/skaya',
             },
           ],
         },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/skaya-org',
-            },
-          ],
-        },
+      
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Skaya, Inc. Built with Skaya.`,
     },
