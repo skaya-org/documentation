@@ -122,16 +122,36 @@ npx skaya init smart-contract
 
 :::
 
-## Start your development
+## Running Your Project
 
-After project generation, navigate to your new project directory and start the development server.
+After initialization, you can start your development servers:
+
+### Start Frontend Only
 
 ```bash
-cd my-web3-app
-npm install
-npm run dev
+skaya start frontend
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Skaya site, you'll need to navigate the terminal there.
+### Start Backend Only
 
-The `npm run dev` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:5173/ or http://localhost:3000/.
+```bash
+skaya start backend
+```
+
+### Smart Contract Development
+
+```bash
+skaya start blockchain
+```
+
+### Start All Services
+
+- Starts frontend, backend and blockchain services
+- Enables cross-service communication
+- Monitors both servers with unified logging
+
+```bash
+skaya start
+```
+
+The `skaya start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:5173/ or http://localhost:3000/.
